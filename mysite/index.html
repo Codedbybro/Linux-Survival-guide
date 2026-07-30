@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Survival Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">IT Survival Guide</div>
+
+        <nav class="menu">
+            <a href="index.html">Главная</a>
+            <a href="linux.html">Linux</a>
+            <a href="vps.html">VPS</a>
+            <a href="bash.html">Bash</a>
+            <a href="memes.html">Memes</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Выживание в IT начинается не с мотивации, а с терминала</h1>
+        <p>
+            Linux, VPS, Bash, nginx, баги, боль, приколы и путь от хаоса к полезным навыкам.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="linux.html" class="btn">Начать с Linux</a>
+            <a href="vps.html" class="btn btn-secondary">Зайти на VPS</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Что тебя ждёт в IT</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Linux 🐧</h3>
+                <p>Терминал, команды, структура системы и понимание, что ты вообще делаешь.</p>
+            </div>
+
+            <div class="card">
+                <h3>VPS ⚙️</h3>
+                <p>Свой сервер, SSH, nginx, firewall и первые реальные действия, а не теория.</p>
+            </div>
+
+            <div class="card">
+                <h3>Bash 💻</h3>
+                <p>Автоматизация, логика, скрипты и магия, которая экономит тебе часы жизни.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Типичные боли новичка</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Permission denied</h3>
+                <p>Ты просто хотел запустить файл, а Linux решил напомнить, кто тут главный.</p>
+            </div>
+
+            <div class="card">
+                <h3>Nginx не работает</h3>
+                <p>Конфиг вроде нормальный, но сайт не открывается, и начинается тех-экзорцизм.</p>
+            </div>
+
+            <div class="card">
+                <h3>unexpected EOF</h3>
+                <p>Где-то не закрылась кавычка, скобка, fi или твоя вера в спокойную жизнь.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Что реально стоит учить</h2>
+        <div class="info-box">
+            <p>
+                Не пытайся выучить всё подряд. Гораздо полезнее уметь:
+                работать с файлами, читать ошибки, поднимать сайт на сервер,
+                понимать nginx, Bash и не бояться терминала.
+            </p>
+            <p>
+                В IT выигрывает не тот, кто знает 800 терминов, а тот,
+                кто умеет открыть сервер и довести задачу до результата.
+            </p>
+        </div>
+    </section>
+<div class="contact-form"> 
+    <h2 style="text-align: center;">Связаться со мной</h2>
+    <!-- Главный контейнер, который держит форму строго по центру -->
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+<form action="/api/contact" method="POST">
+    <input type="text" name="name" placeholder="Имя" required>
+    <input type="email" name="email" placeholder="Почта" required>
+    <textarea name="message" placeholder="Сообщение"></textarea>
+    <button type="submit">Отправить</button>
+</form>
+        <!-- Контейнер с аурой и пингвином (привязан ровно к правому краю формы через calc) -->
+        <div class="aura-container" style="position: absolute; left: calc(50% - 350px); display: flex; justify-content: center; align-items: center; z-index: 10; width: 190px; height: 190px;">
+            <!-- Блок фиолетовой ауры -->
+            <div class="penguin-aura"></div>
+             <div class="lightning-layer bolt-1"></div>
+             <div class="lightning-layer bolt-2"></div>
+              <div class="lightning-glow"></div> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1280px-Tux.svg.png" alt="Пингвин-Linux" class="penguin-pic">
+    </div>
+    </div>
+</div>
+   <hr>
+    <footer class="footer">
+        <p>IT Survival Guide © 2026 | Сделано в атмосфере терминальной боли и прогресса 🚀</p>
+    </footer>
+ 
+</body>
+</html>
